@@ -8,7 +8,7 @@ class Address(Base):
     #TableName
     __tablename__ = "addresses"
     #TableColumns
-    id = Column(Integer, primary_key=True, index=True)
-    address = Column(String, index=True)
+    id = Column(Integer, primary_key=True, autoincrement=True)
+    address = Column(String)
     latitude = Column(Float)
     longitude = Column(Float)
